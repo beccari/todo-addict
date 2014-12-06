@@ -10,7 +10,7 @@ var app = express();
 
 // configs
 
-mongoose.connect('mongodb://meceap.devdb.local:27017/todo');
+mongoose.connect('mongodb://localhost:27017/todo');
 
 app.use(express.static(__dirname + '/public'));
 app.use(morgan('dev'));
